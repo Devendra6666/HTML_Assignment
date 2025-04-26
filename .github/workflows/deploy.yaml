@@ -1,6 +1,6 @@
 name: Simple Workflow on EC2
 
-on: [push]
+on: [push,pull_request]
 
 jobs:
   build:
