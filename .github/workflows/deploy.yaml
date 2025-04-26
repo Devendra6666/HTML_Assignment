@@ -1,1 +1,11 @@
-this is the yaml file
+name: Simple Workflow on EC2
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: Print Hello from EC2
+        run: echo "Hello from my EC2 GitHub Runner!"
+
